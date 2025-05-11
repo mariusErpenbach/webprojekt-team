@@ -41,8 +41,8 @@ Wenn du zum ersten Mal mit GitHub im Team arbeitest, folge diesen Schritten:
    (Ersetze `mein-name` durch deinen eigenen Namen.)
 
 9. **Änderungen machen und speichern**  
-   Arbeite an den Dateien, speichere deine Änderungen.
-
+   Arbeite an den Dateien, speichere deine Änderungen.<br/>
+   (Mach ruhig erstmal nur eine Kleine mini Änderung wie zum Beispiel einen kleinen "hallo Welt" text schreiben, und folge dann fort mit Schritt 10.<br/> Der erste push ist da um deine Branch zu erschaffen und um dein Lokales Git mit Github zu verbinden)
 10. **Änderungen zum Commit vormerken**  
     ```
     git add .
@@ -59,7 +59,7 @@ Wenn du zum ersten Mal mit GitHub im Team arbeitest, folge diesen Schritten:
     ```
 
 13. **Pull Request erstellen**  
-    Diesen Schritt machen wir am Ende wenn wir fertig sind mit unseren Pages.
+    Diesen Schritt machen wir am Ende wenn wir fertig sind mit unseren Pages. <br/>
     Gehe auf GitHub zur Projektseite und erstelle einen Pull Request, damit deine Änderungen ins Hauptprojekt übernommen werden können.
     Danach wird die Branch geschlossen und das Feature ist fertig implementiert. In unserem Mini Projekt machen wir dies also zum Schluss (Montag Nachmittag ca)
 **Tipp:**  
