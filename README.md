@@ -1,6 +1,6 @@
 ## Anleitung zur Mitarbeit am Projekt
 
-Wenn du zum ersten Mal mit GitHub und Teamarbeit arbeitest, folge diesen Schritten:
+Wenn du zum ersten Mal mit GitHub im Team arbeitest, folge diesen Schritten:
 
 1. **GitHub-Ordner anlegen**  
    Erstelle auf deinem Computer einen Ordner, z.B. `Github`.
