@@ -42,7 +42,7 @@ Wenn du zum ersten Mal mit GitHub und Teamarbeit arbeitest, folge diesen Schritt
 
 9. **Änderungen machen und speichern**  
    Arbeite an den Dateien, speichere deine Änderungen.
-
+   
 10. **Änderungen zum Commit vormerken**  
     ```
     git add .

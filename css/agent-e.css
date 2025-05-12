@@ -7,13 +7,33 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
+/*-------------------------------------------- */
 h1 {
-    color: #2c3e50;
-
+    color:#2c3e50;
+}:hover {
+    color: #2980b9;
+    text-shadow: 0 2px 8px rgba(52, 109, 162, 0.2);
+    cursor: pointer;
 }
+h1
+.agent-headings{
+    font-size: 1.5em;
+    color:yellow;
+    margin-bottom: 10px;
+}
+.agent-headings{
+  
+    text-shadow: 0 2px 8px rgba(129, 151, 172, 0.2);
+    cursor: pointer;
+}
+#agent-projekte-heading{
+    font-size:1.2em; 
+    color:#222;
+}
+/*-------------------------------------------- */
+    
 
 h2, h3 {
     color: #34495e;
@@ -29,4 +49,62 @@ p{
 a {
     color: #2980b9;
     text-decoration: none;
+}
+.expander {
+    margin-top: 24px;
+    width: 100%;
+    max-width: 500px;
+}
+.expander summary {
+    background: #76901e;
+    color: #fff;
+    padding: 12px 20px;
+    font-size: 1.1em;
+    border-radius: 6px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.2s;
+}
+.expander[open] summary {
+    background: #5a6e16;
+}
+.expander ul {
+    background: #fff;
+    margin: 0;
+    padding: 16px 24pxclass="agent-headings";
+    border-radius: 0 0 6px 6px;
+    box-shadow: 0 2px 8px rgba(44,62,80,0.07);
+}
+
+
+
+body.dark-mode {
+    background: #181a1b;
+    color: #e0e0e0;
+}
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3 {
+    color: #ffe082;
+}
+body.dark-mode .agent-headings {
+    color: #ffe082;
+    text-shadow: 0 2px 8px rgba(255, 224, 130, 0.2);
+}
+body.dark-mode #agent-projekte-heading {
+    color: #e0e0e0;
+}
+body.dark-mode .expander summary {
+    background: #333b1e;
+    color: #ffe082;
+}
+body.dark-mode .expander[open] summary {
+    background: #23281a;
+}
+body.dark-mode .expander ul {
+    background: #232323;
+    color: #e0e0e0;
+}
+body.dark-mode a {
+    color: #90caf9;
 }

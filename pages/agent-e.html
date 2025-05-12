@@ -7,26 +7,37 @@
     <title>Agent E</title>
 </head>
 <body>
-    <h1>Agent E</h1>
+    <button id="darkmode-toggle" style="position:fixed;top:20px;right:20px;z-index:1000;">🌙 Darkmode</button>
+    <h1 class="agent-headings">Agent E</h1>
     <h2>Software Developer & ERP Spezialist</h2>
     <p>
-
-        Hallo! Ich bin Agent E,Softwareentwickler mit Fokus auf ERP-Systeme.<br>
-        Ich unterstütze Unternehmen dabei, ihre Geschäftsprozesse durch maßgeschneiderte Softwarelösungen zu optimieren.
+        Hallo! Ich bin Agent E, Softwareentwickler mit Fokus auf ERP-Systeme.<br>
+        Ich unterstütze Unternehmen dabei, ihre Geschäftsprozesse durch maßgeschneiderte Softwarelösungen zu optimieren.<br/>
         Von der Analyse der Anforderungen bis zur Implementierung und Schulung stehe ich Ihnen zur Seite.
     </p>
-
-    <h3>Meine Leistungen:</h3>
+    <h1 class="agent-headings">Meine Leistungen:</h1>
     <ul>
         <li>Entwicklung und Anpassung von ERP-Systemen</li>
         <li>Integration von Drittanbieter-Software</li>
         <li>Automatisierung von Geschäftsprozessen</li>
         <li>Beratung und Support rund um ERP-Lösungen</li>
-
     </ul>
     <h3>Kontakt</h3>
-    <p>
-        <a href="https://github.com/mariusErpenbach/">Meine Projekte</a>
-    </p>
+    <h1 class="agent-headings" id="agent-projekte-heading">Agent E Projekte</h1>
+    <details class="expander ">
+      <summary>Projekte</summary>
+      <ul>
+        <li>ERP-Integration für Unternehmen X</li>
+        <li>Automatisierung von Rechnungsprozessen</li>
+        <li>Schnittstellenentwicklung zu CRM-Systemen</li>
+      </ul>
+    </details>
+    <script>
+      const toggle = document.getElementById('darkmode-toggle');
+      toggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        toggle.textContent = document.body.classList.contains('dark-mode') ? '☀️ Lightmode' : '🌙 Darkmode';
+      });
+    </script>
 </body>
 </html>
