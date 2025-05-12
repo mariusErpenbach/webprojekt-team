@@ -1,0 +1,89 @@
+/* Styles ausgelagert aus index.html */
+body {
+    background-color: #696969;
+    color: #c4c1c1;
+    font-family: Arial, sans-serif;
+    background-image: url('../assets/ERP.jpeg');
+    background-size: 105%;
+    background-repeat: no-repeat;
+    background-position: center 95%;
+    min-height: 100vh;
+}
+h1 {
+    color: #a1a1a1;
+    text-decoration: underline;
+}
+a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+a:hover {
+    text-decoration: underline;
+}
+.button {
+    background-color: #333333;
+    color: #ffffff !important;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    margin: 10px;
+}
+.button:hover {
+    background-color: #555555;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+section {
+    width: 100%;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(18,18,18,0.7);
+    border-radius: 20px;
+    padding: 30px 20px 30px 20px;
+    margin-top: 40px;
+}
+section p {
+    margin-top: 20px; /* Added a value for margin-top */
+    margin-bottom: 39px;
+}
+footer {
+    text-align: center;
+}
+
+/* Styles für die Buttons und das Suchfeld im Hauptbereich */
+.agenten-container {
+    text-align: center;
+    height: 65vh;
+}
+.agenten-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.agenten-button-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.agenten-button-col:last-child {
+    margin-right: 5px;
+}
+.agent-label {
+    color: #ffcc00;
+    margin-top: 2px;
+}
+.stichwortsuche {
+    display: block;
+    margin: 379px auto 30px auto;
+    padding: 10px;
+    width: 50%;
+    ;
+}

@@ -1,11 +1,57 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agent F</title>
+    <style>
+        body {
+            background-color: silver; /* Set background color to silver */
+            color: #a3c1ad; /* Pastellgrün for all text */
+        }
+        h1 {
+            text-align: center; /* Center align the h1 element */
+            font-size: calc(100% * 2); /* Doubled the font size of h1 */
+            text-decoration: underline; /* Underline the h1 element */
+            color: #a3c1ad; /* Pastellgrün */
+        }
+        p {
+            text-align: center; /* Center align the paragraph text */
+            font-family: Georgia, serif; /* Set font to Georgia for the paragraph */
+            color: #a3c1ad; /* Pastellgrün */
+        }
+        a, .button {
+            color: #a3c1ad !important; /* Pastellgrün for links and buttons */
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome Agent F</h1>
+    <h1>Willkommen im Agentenhub</h1>
+    <br>
+    <p>Hier können Sie sich orientieren, welche Leistungen von unseren Agenten angeboten werden. Lesen Sie sich die Informationen bzgl. der Agenten auf deren Seiten durch oder geben Sie unten ein Stichwort ein. Sollte einer unserer Agenten diese Leistung zur Verfügung stellen können, werden Sie direkt in dessen Hauptquartier eingeladen.</p>
+    <br>
+    <div style="text-align: center;">
+        <a href="agent-e.html" class="button" style="display: inline-block; margin: 10px; padding: 10px 20px; background-color: #1e90ff; color: white; text-decoration: none; border-radius: 5px;">Agent E</a>
+        <p style="text-align: center; margin: 5px;">Entwicklung</p>
+        <a href="agent-s.html" class="button" style="display: inline-block; margin: 10px; padding: 10px 20px; background-color: #1e90ff; color: white; text-decoration: none; border-radius: 5px;">Agent S</a>
+        <p style="text-align: center; margin: 5px;">Support</p>
+    </div>
+    <br>
+    <input type="text" placeholder="Stichwort eingeben..." style="display: block; margin: 0 auto; padding: 10px; width: 50%;">
+    <script>
+        document.querySelector('input[type="text"]').addEventListener('keypress', function(event) {
+            if (event.key === 'Enter') {
+                const keywordsAgentE = ["erp-systeme", "ERP", "erp", "Automatisierung", "automatisierung", "entwicklung", "Entwicklung", "maßgeschneidert"];
+                const keywordsAgentS = ["Beratung", "beratung", "geschäftsprozesse", "Geschäftsprozesse", "Support", "support", "Kundenwunsch", "Kunde", "kunde", "Hilfe", "hilfe"];
+                const input = event.target.value.toLowerCase();
+
+                if (keywordsAgentE.includes(input)) {
+                    window.location.href = 'agent-e.html';
+                } else if (keywordsAgentS.includes(input)) {
+                    window.location.href = 'agent-s.html';
+                }
+            }
+        });
+    </script>
 </body>
-</html>
+</html> -->

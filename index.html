@@ -7,18 +7,44 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to Webprojekt Team</h1>
-    </header>
-    <main>
-        <p>This is the main content area.</p>
-        <nav>
-            <ul>
-            <li><a href="pages/agent-e.html">Agent E</a></li>
-            <li><a href="pages/agent-s.html">Agent S</a></li>
-            <li><a href="pages/agent-f.html">Agent F</a></li>
-            </ul>
-        </nav>
+<main>
+        <section>
+            <h1>Willkommen im Agentenhub</h1>
+            <br>
+            <p>Hier können Sie sich orientieren, welche Leistungen von unseren Agenten angeboten werden. Lesen Sie sich die Informationen bzgl. der Agenten auf deren Seiten durch oder geben Sie unten ein Stichwort ein. Sollte einer unserer Agenten diese Leistung zur Verfügung stellen können, werden Sie direkt in dessen Hauptquartier eingeladen.</p>
+            <br>
+            <div style="text-align: center;">
+                <div class="agenten-container">
+                    <div class="agenten-buttons">
+                        <div class="agenten-button-col">
+                            <a href="pages/agent-e.html" class="button">Agent E</a>
+                            <span class="agent-label">Dev</span>
+                        </div>
+                        <div class="agenten-button-col">
+                            <a href="pages/agent-s.html" class="button">Agent S</a>
+                            <span class="agent-label">Support</span>
+                        </div>
+                    </div>
+                    
+                    <input type="text" class="stichwortsuche" placeholder="Stichwort eingeben...">
+                </div>
+            </div>
+            <script>
+                document.querySelector('input[type="text"]').addEventListener('keypress', function(event) {
+                    if (event.key === 'Enter') {
+                        const keywordsAgentE = ["erp-systeme", "erp", "automatisierung", "entwicklung", "maßgeschneidert"];
+                        const keywordsAgentS = ["beratung", "geschäftsprozesse", "support", "kundenwunsch", "kunde", "hilfe"];
+                        const input = event.target.value.toLowerCase();
+
+                        if (keywordsAgentE.includes(input)) {
+                            window.location.href = 'pages/agent-e.html';
+                        } else if (keywordsAgentS.includes(input)) {
+                            window.location.href = 'pages/agent-s.html';
+                        }
+                    }
+                });
+            </script>
+        </section>
     </main>
     <footer>
         <p>&copy; 2025 Webprojekt Team. All rights reserved.</p>
