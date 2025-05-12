@@ -1,0 +1,142 @@
+/* CSS Variables */
+:root {
+    --background-color: #fff7e6;
+    --text-color: #4a2c00;
+    --header-background: #ff8c00;
+    --header-text-color: #ffffff;
+    --section-background: #fff3e0;
+    --section-shadow: rgba(255, 140, 0, 0.2);
+    --footer-background: #ff8c00;
+    --footer-text-color: #ffffff;
+}
+
+/* Allgemeine Stile */
+body {
+    font-family: 'Julius Sans One', Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background: #000;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../css/assets/bg/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.business-header, .business-main, .business-footer {
+    position: relative;
+    z-index: 1;
+}
+
+/* Header */
+.business-header {
+    background: linear-gradient(to bottom, rgba(255, 140, 0, 0.8), rgba(255, 200, 0, 0.8)); /* Gradient to center */
+    color: var(--header-text-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.business-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.business-header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Main Content */
+.business-main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--section-background);
+    box-shadow: 0 2px 5px var(--section-shadow);
+    border-radius: 8px;
+}
+
+.business-main section {
+    margin-bottom: 20px;
+}
+
+.business-main h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.business-main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.business-main ul li {
+    background: var(--section-background);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body.dark-mode .business-main ul li {
+    background: #3a2a00;
+    color: var(--text-color);
+}
+
+/* Footer */
+.business-footer {
+    background: linear-gradient(to bottom, rgba(255, 140, 0, 0.8), rgba(255, 200, 0, 0.8)); /* Gradient to center */
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    --background-color: #4a2c00;
+    --text-color: #ffe6cc;
+    --header-background: #cc7000;
+    --header-text-color: #ffe6cc;
+    --section-background: #5a3a00;
+    --section-shadow: rgba(255, 140, 0, 0.3);
+    --footer-background: #cc7000;
+    --footer-text-color: #ffe6cc;
+}
+
+/* Portfolio Button */
+.portfolio-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c757d; /* Stylish grey */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-button:hover {
+    background-color: #40e0d0; /* Turquoise */
+}
+
+/* Portrait Gallery */
+.portrait-gallery img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ff8c00;
+}
