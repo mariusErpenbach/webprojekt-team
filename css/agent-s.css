@@ -12,17 +12,37 @@
 
 /* Allgemeine Stile */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Julius Sans One', Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: var(--background-color);
     color: var(--text-color);
+    background: #000;
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: url('../css/assets/bg/bg.png') no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.3;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.business-header, .business-main, .business-footer {
+    position: relative;
+    z-index: 1;
 }
 
 /* Header */
 .business-header {
-    background-color: var(--header-background);
+    background: linear-gradient(to bottom, rgba(255, 140, 0, 0.8), rgba(255, 200, 0, 0.8)); /* Gradient to center */
     color: var(--header-text-color);
     padding: 20px 0;
     text-align: center;
@@ -78,10 +98,10 @@ body.dark-mode .business-main ul li {
 
 /* Footer */
 .business-footer {
+    background: linear-gradient(to bottom, rgba(255, 140, 0, 0.8), rgba(255, 200, 0, 0.8)); /* Gradient to center */
+    color: var(--footer-text-color);
     text-align: center;
     padding: 10px 0;
-    background-color: var(--footer-background);
-    color: var(--footer-text-color);
     margin-top: 20px;
 }
 
@@ -95,4 +115,28 @@ body.dark-mode {
     --section-shadow: rgba(255, 140, 0, 0.3);
     --footer-background: #cc7000;
     --footer-text-color: #ffe6cc;
+}
+
+/* Portfolio Button */
+.portfolio-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c757d; /* Stylish grey */
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-button:hover {
+    background-color: #40e0d0; /* Turquoise */
+}
+
+/* Portrait Gallery */
+.portrait-gallery img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #ff8c00;
 }

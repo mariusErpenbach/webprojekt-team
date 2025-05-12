@@ -3,45 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agent S - Anwendungsentwickler</title>
+    <title>Agent S - Portfolio</title>
     <link rel="stylesheet" href="../css/agent-s.css">
+    <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="business-header">
         <div class="container">
             <h1>Agent S</h1>
-            <p>Professioneller Anwendungsentwickler</p>
-            <button id="darkModeToggle">Dark Mode</button>
+            <p>Software & Applications Developer</p>
+            <a href="https://maniaccainam.github.io/portfolio/" target="_blank" class="portfolio-button">Visit My Portfolio</a>
         </div>
     </header>
     <main class="business-main">
         <section class="about">
-            <h2>Über mich</h2>
-            <p>Ich bin ein erfahrener Anwendungsentwickler mit einem Fokus auf moderne Webtechnologien und Softwarelösungen. 
-            Mein Ziel ist es, innovative und effiziente Anwendungen zu entwickeln, die den Alltag erleichtern.</p>
+            <h2>About Me</h2>
+            <p>Hello! I am Agent S, a dedicated software and applications developer. I specialize in creating innovative and efficient solutions that make life easier. As part of a team of agents, I bring expertise in modern web technologies and collaborative development.</p>
         </section>
-        <section class="skills">
-            <h2>Meine Fähigkeiten</h2>
+        <section class="achievements">
+            <h2>Achievements</h2>
             <ul>
-                <li>HTML, CSS, JavaScript</li>
-                <li>Backend-Entwicklung mit Node.js und Python</li>
-                <li>Datenbankdesign und -verwaltung</li>
-                <li>Agile Entwicklungsmethoden</li>
+                <li>Developed a team collaboration tool used by 500+ users.</li>
+                <li>Optimized backend systems, reducing load times by 40%.</li>
+                <li>Certified in Agile Development and Cloud Computing.</li>
             </ul>
         </section>
+        <section class="portraits">
+            <h2>Portraits</h2>
+            <div class="portrait-gallery">
+                <img src="../css/assets/portraits/portrait1.jpg" alt="Portrait 1">
+                <img src="../css/assets/portraits/portrait2.jpg" alt="Portrait 2">
+                <img src="../css/assets/portraits/portrait3.jpg" alt="Portrait 3">
+            </div>
+        </section>
         <section class="contact">
-            <h2>Kontakt</h2>
-            <p>Du kannst mich unter <a href="mailto:agent.s@example.com">agent.s@example.com</a> erreichen.</p>
+            <h2>Contact Me</h2>
+            <form action="https://example.com/submit" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+                <button type="submit">Send</button>
+            </form>
         </section>
     </main>
     <footer class="business-footer">
-        <p>&copy; 2025 Agent S. Alle Rechte vorbehalten.</p>
+        <p>&copy; 2025 Agent S. All rights reserved.</p>
     </footer>
-    <script>
-        const toggleButton = document.getElementById('darkModeToggle');
-        toggleButton.addEventListener('click', () => {
-            document.body.classList.toggle('dark-mode');
-        });
-    </script>
 </body>
 </html>
