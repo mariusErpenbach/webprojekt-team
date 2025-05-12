@@ -1,4 +1,98 @@
-body { background-color: rgb(248, 248, 248) 
+/* CSS Variables */
+:root {
+    --background-color: #fff7e6;
+    --text-color: #4a2c00;
+    --header-background: #ff8c00;
+    --header-text-color: #ffffff;
+    --section-background: #fff3e0;
+    --section-shadow: rgba(255, 140, 0, 0.2);
+    --footer-background: #ff8c00;
+    --footer-text-color: #ffffff;
+}
 
+/* Allgemeine Stile */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: var(--text-color);
+}
 
+/* Header */
+.business-header {
+    background-color: var(--header-background);
+    color: var(--header-text-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.business-header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+.business-header p {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Main Content */
+.business-main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--section-background);
+    box-shadow: 0 2px 5px var(--section-shadow);
+    border-radius: 8px;
+}
+
+.business-main section {
+    margin-bottom: 20px;
+}
+
+.business-main h2 {
+    color: #2c3e50;
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.business-main ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.business-main ul li {
+    background: var(--section-background);
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+body.dark-mode .business-main ul li {
+    background: #3a2a00;
+    color: var(--text-color);
+}
+
+/* Footer */
+.business-footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: var(--footer-background);
+    color: var(--footer-text-color);
+    margin-top: 20px;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    --background-color: #4a2c00;
+    --text-color: #ffe6cc;
+    --header-background: #cc7000;
+    --header-text-color: #ffe6cc;
+    --section-background: #5a3a00;
+    --section-shadow: rgba(255, 140, 0, 0.3);
+    --footer-background: #cc7000;
+    --footer-text-color: #ffe6cc;
 }

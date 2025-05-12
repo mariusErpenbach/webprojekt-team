@@ -7,17 +7,20 @@
     <link rel="stylesheet" href="../css/agent-s.css">
 </head>
 <body>
-    <header>
-        <h1>Hallo, ich bin Agent S</h1>
-        <p>Ein leidenschaftlicher Anwendungsentwickler</p>
+    <header class="business-header">
+        <div class="container">
+            <h1>Agent S</h1>
+            <p>Professioneller Anwendungsentwickler</p>
+            <button id="darkModeToggle">Dark Mode</button>
+        </div>
     </header>
-    <main>
-        <section>
+    <main class="business-main">
+        <section class="about">
             <h2>Über mich</h2>
             <p>Ich bin ein erfahrener Anwendungsentwickler mit einem Fokus auf moderne Webtechnologien und Softwarelösungen. 
             Mein Ziel ist es, innovative und effiziente Anwendungen zu entwickeln, die den Alltag erleichtern.</p>
         </section>
-        <section>
+        <section class="skills">
             <h2>Meine Fähigkeiten</h2>
             <ul>
                 <li>HTML, CSS, JavaScript</li>
@@ -26,13 +29,19 @@
                 <li>Agile Entwicklungsmethoden</li>
             </ul>
         </section>
-        <section>
+        <section class="contact">
             <h2>Kontakt</h2>
             <p>Du kannst mich unter <a href="mailto:agent.s@example.com">agent.s@example.com</a> erreichen.</p>
         </section>
     </main>
-    <footer>
+    <footer class="business-footer">
         <p>&copy; 2025 Agent S. Alle Rechte vorbehalten.</p>
     </footer>
+    <script>
+        const toggleButton = document.getElementById('darkModeToggle');
+        toggleButton.addEventListener('click', () => {
+            document.body.classList.toggle('dark-mode');
+        });
+    </script>
 </body>
 </html>
